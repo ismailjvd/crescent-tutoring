@@ -1,0 +1,356 @@
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #2FB0B9;
+}
+
+.heading-container {
+  background-image: url('../img/background-calculator.jpg');
+}
+
+#heading-overlay {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.38;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.content-container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, .5);
+}
+
+.content-container-1 .bar {
+  height: 80px;
+  width: 6px;
+  background-color: #00B1C7;
+  margin-right: 24px;
+}
+
+#section-highlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+  font-size: 32px;
+  margin-top: 28px;
+  margin-left:84px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+#section-content {
+  width: 760px;
+  margin-right: 84px;
+  font-size: 18px;
+}
+
+#section-content strong {
+  font-weight: 600;
+}
+
+#prices-content-container {
+  position: relative;
+  z-index: 1;
+}
+
+.content-section-blue {
+  height: 600px;
+  color: white;
+  background-color: #2F488E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.content-section-white {
+  height: 600px;
+  color: black;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.content-section-big-container {
+  height: 100%;
+  width: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-section-blue .content-section-big-container {
+  box-shadow: 3px 0px 6px rgba(0, 0, 0, .5);
+}
+
+.content-section-white .content-section-big-container {
+  box-shadow: 3px 0px 6px rgba(0, 0, 0, .1);
+}
+
+.content-section-text-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content-section-text-container a {
+  text-decoration: none;
+}
+
+.content-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.content-section-text-container .bar {
+  height: 26px;
+  width: 4px;
+  margin-right: 16px;
+  position: relative;
+  top: 2px;
+}
+
+
+.content-section-blue .bar {
+  background-color: #D1AF00;
+}
+
+.content-section-white .bar {
+  background-color: #00B1C7;
+}
+
+.content-section-description {
+  max-width: 440px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content-section-description ul {
+  padding-inline-start: 16px;
+}
+
+.content-section-description a {
+  text-decoration: underline;
+}
+
+.content-section-img-container {
+  height: 100%;
+  width: 840px;
+  position: relative;
+  z-index: -1;
+}
+
+.content-section-white .content-section-img-container {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+}
+
+.content-section-button {
+  padding: 16px 20px 16px 20px;
+  margin-top: 32px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+}
+
+.content-section-blue .content-section-button {
+  background-color: #D1AF00;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+}
+
+.content-section-white .content-section-button {
+  background-color: #6EC1E4;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+}
+
+.content-section-blue .content-section-button:hover {
+  cursor: pointer;
+  background-color: #BB9D01;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .4);
+  transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+.content-section-white .content-section-button:hover {
+  background-color: #63ADCC;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .4);
+  transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+.content-section-button:active {
+  transform: scale(0.99);
+}
+
+
+
+#content-section-img-1 {
+  height: 600px;
+  background-image: url('../img/tutoring-window-2.jpg');
+  background-color: #2F488E;
+  background-position: 280px 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+#content-section-img-2 {
+  height: 600px;
+  background-image: url('../img/rates_pic.jpg');
+  background-repeat: no-repeat;
+  background-size: 900px 600px;
+}
+
+#content-section-img-3 {
+  height: 600px;
+  background-image: url('../img/coins_tree.jpg');
+  background-color: #2F488E;
+  background-position: 280px 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+@media (max-width: 1480px) {
+  #section-highlight {
+    margin-left: 44px;
+  }
+  #section-content {
+    margin-right: 44px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .content-container-1 .bar {
+    height: 144px;
+  }
+  #section-highlight {
+    max-width: 340px;
+    margin-top: 16px;
+  }
+  .content-section-blue {
+    height: 480px;
+  }
+  .content-section-white {
+    height: 480px;
+  }
+  .content-section-img-container {
+    height: 100%;
+    width: 680px;
+  }
+  #content-section-img-1 {
+    height: 480px;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto 480px;
+  }
+  #content-section-img-2 {
+    height: 480px;
+    background-image: url('../img/rates_pic.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 480px;
+  }
+  #content-section-img-3 {
+    height: 480px;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto 480px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .content-section-blue {
+    height: 400px;
+  }
+  .content-section-white {
+    height: 400px;
+  }
+  .content-section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .content-section-text-container .bar {
+    height: 20px;
+    width: 4px;
+    margin-right: 16px;
+    position: relative;
+    top: 2px;
+  }
+  .content-section-description {
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .content-section-button {
+    padding: 12px 16px 12px 16px;
+    margin-top: 28px;
+    font-size: 14px;
+  }
+  .content-section-img-container {
+    height: 100%;
+    width: 540px;
+  }
+  #content-section-img-1 {
+    height: 400px;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto 480px;
+  }
+  #content-section-img-2 {
+    height: 400px;
+    background-image: url('../img/rates_pic.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 480px;
+  }
+  #content-section-img-3 {
+    height: 400px;
+    background-attachment: local;
+    background-position: center;
+    background-size: auto 480px;
+  }
+}
+
+@media (max-width: 1080px) {
+    #section-highlight {
+      margin-top: 24px;
+    }
+}
+
+@media (max-height: 600px) and (min-width: 1380px) {
+
+    #content-section-img-1 {
+        background-size: auto 600px; /* Force the image to its minimum width */
+    }
+
+    #content-section-img-3 {
+        background-size: auto 600px; /* Force the image to its minimum width */
+    }
+
+}

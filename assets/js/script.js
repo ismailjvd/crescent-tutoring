@@ -1,50 +1,51 @@
-$(document).ready(function()  {
+$(document).ready(function() {
 
-	// PART 1: YOUR CODE HERE
-	var innerHtml = "<div class='fruit'><img src='assets/img/fruit.jpeg' /></div>";
-	for (let i = 0; i < 6; i++) {
-		$("#content").append(innerHtml);
-	}
+  var scrollnow = function(e) {
+    // if scrollnow()-function was triggered by an event
+    if (e) {
+        e.preventDefault();
+        var target = this.hash;
+    }
+    // else it was called when page with a #hash was loaded
+    else {
+        var target = location.hash;
+    }
 
-	innerHtml = "<div class='water'><img src='assets/img/water.jpeg' /></div>";
-	for (let i = 0; i < 12; i++) {
-		$("#content").append(innerHtml);
-	}
+    // same page scroll
+    $.smoothScroll({
+        offset: -20,
+        scrollTarget: target,
+        speed: 1500
+    });
+    };
 
-	innerHtml = "<div class='bread'><img src='assets/img/bread.jpeg' /></div>";
-	for (let i = 0; i < 8; i++) {
-		$("#content").append(innerHtml);
-	}
+    // if page has a #hash
+    if (location.hash) {
+        $('html, body').scrollTop(0).show();
+        // smooth-scroll to hash
+        scrollnow();
+    }
 
+    // for each <a>-element that contains a "/" and a "#"
+    $('a[href*="/"][href*="#"]').each(function(){
+        // if the pathname of the href references the same page
+        if (this.pathname.replace(/^\//,'') == location.pathname.replace(/^\//,'') && this.hostname == location.hostname) {
+            // only keep the hash, i.e. do not keep the pathname
+            $(this).attr("href", this.hash);
+        }
+    });
 
-	$(".nav-item").click(function() {
+    // select all href-elements that start with #
+    // including the ones that were stripped by their pathname just above
+    $('a[href^="#"]:not([href="#"])').click(scrollnow);
 
-		let buttonName = $(this).text();
-		let buttonActive = $(this).hasClass("active");
-
-		// UNCOMMENT THE SECTION BELOW FOR PART 2
-
-
-
-		// YOUR CODE HERE - PART 2.1
-		condition = !buttonActive;
-
-		if (condition) {
-			$(this).addClass("active");
-			$(this).removeClass("inactive");
-
-			// YOUR CODE HERE - PART 2.2
-			$("." + buttonName).show()
-
-		} else {
-			$(this).addClass("inactive");
-			$(this).removeClass("active");
-
-			// YOUR CODE HERE - PART 2.2
-			$("." + buttonName).hide()
-
-		}
-
-
-	})
-})
+  $(window).scroll(function() {
+    var pos = Math.max( $("html").scrollTop(), $("body").scrollTop() )
+    if (pos > 88) {
+      $("#fixed-navbar").css({"visibility": "visible", "opacity": 1, "top": "0px"});
+    }
+    else {
+      $("#fixed-navbar").css({"visibility": "hidden", "opacity": 0, "top": "-36px"});
+    }
+  });
+});

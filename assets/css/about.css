@@ -1,0 +1,315 @@
+.heading-container {
+  background-image: url('../img/bump-collaboration-cropped.jpg');
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#heading-overlay {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.38;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#mission-container {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  background-color: #2F488E;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mission-content-container {
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: 0.0625em;
+}
+
+#mission-content-container .section-title {
+  color: white;
+}
+
+.underline {
+  height: 3px;
+  margin-left: 2px;
+}
+
+#mission-content-container .underline {
+  margin-top: 8px;
+  background-color: #D1AF00;
+  width: 60px;
+}
+
+.section-content {
+  margin-top: 16px;
+  font-size: 22px;
+  color: white;
+  line-height: 1.6em;
+}
+
+#team-container {
+  position: relative;
+  height: 480px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#team-container .section-title {
+  color: black;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, .2);
+}
+
+#team-container .underline {
+  margin: 12px 0px;
+  background-color: #00B1C7;
+  width: 120px;
+}
+
+#team-images-container
+{
+  height: 360px;
+  width: 1096px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-image {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 300px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+#ismail-pic {
+  background-image: url("../img/ismail-javed-pic.jpg");
+}
+
+#shawn-pic {
+  background-image: url("../img/shawn-profile-square.jpg");
+}
+
+#ayan-pic {
+  background-image: url("../img/ayan-profile-cropped.jpg");
+}
+
+.team-image img {
+  height: 300px;
+  width: 300px;
+}
+
+.team-overlay-container {
+  position: relative;
+  top: 300px;
+  left: 0px;
+  height: 300px;
+  width: 300px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.team-overlay-text {
+  color: white;
+  font-size: 14px;
+  width: 264px;
+}
+
+.team-overlay-text p {
+  margin: 0px;
+  padding: 0px 0px 12px 0px;
+}
+
+.team-overlay-text strong {
+  font-weight: 600;
+}
+
+.team-name {
+  position: relative;
+  right: 0px;
+  bottom: 72px;
+  text-align: left;
+  height: 32px;
+  width: 300px;
+  background-color: #00B1C7;
+}
+
+
+.team-name p {
+  padding: 4px 0px 8px 12px;
+  margin: 0px;
+  color: white;
+  font-size: 18px;
+
+  white-space: nowrap;
+}
+
+.team-caption {
+  position: relative;
+  left: 0px;
+  bottom: 72px;
+  text-align: left;
+  height: 28px;
+  width: 276px;
+  background-color: #666666;
+}
+
+.team-caption p {
+  padding: 4px 12px 8px 12px;
+  margin: 0px;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#services {
+  position: relative;
+  width: 100%;
+  background-color: #2F488E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+
+#services-big-content-container {
+  height: 100%;
+  width: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#services-content-container .section-title {
+  color: white;
+  font-size: 32px;
+}
+
+#services-content-container .section-content {
+  color: white;
+  font-size: 20px;
+  width: 640px;
+}
+
+
+#services-content-container .underline {
+  margin-top: 8px;
+  background-color: #D1AF00;
+  width: 60px;
+}
+
+#services-image-container {
+  width: 700px;
+  height: 100%;
+  background-image: url("../img/tutoring-classroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 750px 500px;
+}
+
+@media (max-width: 1460px) {
+  #services-content-container .section-title {
+    font-size: 28px;
+  }
+  #services-content-container .section-content {
+    font-size: 18px;
+    width: 580px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .section-title {
+    font-size: 28px;
+  }
+  .section-content {
+    font-size: 18px;
+  }
+  #mission-content-container {
+    width: 1080px;
+  }
+  #mission-container {
+    height: 240px;
+  }
+  #services {
+    height: 340px;
+  }
+  #services-image-container {
+    width: 540px;
+  }
+  #services-image-container {
+    background-size: 600px 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #team-images-container {
+    width: 996px;
+  }
+  #mission-content-container {
+    width: 980px;
+  }
+  #services {
+    height: 300px;
+  }
+  #services-content-container .section-title {
+    font-size: 26px;
+  }
+  #services-content-container .section-content {
+    font-size: 16px;
+    width: 480px;
+  }
+  #services-image-container {
+    width: 460px;
+  }
+  #services-image-container {
+    background-size: 480px 320px;
+  }
+}
